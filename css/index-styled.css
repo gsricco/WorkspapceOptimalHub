@@ -1,0 +1,732 @@
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+*{
+    scroll-behavior: smooth;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section {
+    width: 100%;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+
+/*//header*/
+.header_container_nav {
+    max-width: 1200px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px 0 160px;
+    background: #ffffff;
+    gap: 50px;
+}
+
+.header_logo {
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+    color: #000000;
+    background: #9a1414;
+    padding: 0 40px;
+}
+
+.box-logo-name {
+    width: 30%;
+
+}
+
+.header_logo a {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+.header__logo__name {
+    font-size: 24px;
+    border-right: 2px solid #000000;
+    text-align: center;
+}
+
+.header__logo_info {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.header {
+    position: fixed;
+    width: 100vw;
+    background-color: #333;
+    color: #9a1414;
+    padding: 20px 0;
+
+    z-index: 1000;
+}
+
+header a, .nav-list__item a {
+    text-decoration: none;
+    color: #9a1414;
+}
+
+.header__logo__photo {
+    width: 60px;
+    height: 60px;
+    margin-right: 50px;
+}
+
+.header__logo__photo img {
+    position: relative;
+    width: 100%;
+    top: 0;
+}
+
+.header__nav {
+    text-align: right;
+}
+
+.nav-list__item {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+
+.nav-list__item a {
+    text-decoration: none;
+    color: #9a1414;
+}
+
+.nav-list__item a:hover {
+    font-weight: 700;
+    color: #000;
+}
+
+.header__toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    /*top: 0;*/
+    right: 50px;
+}
+
+.header__toggle span {
+    background-color: #9a1414;
+    display: block;
+    height: 2px;
+    margin-bottom: 5px;
+    transition: transform 0.3s ease;
+    width: 25px;
+}
+
+/*container*/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/*main*/
+/*section*/
+
+.section {
+    width: 100%;
+    padding: 40px 20px;
+}
+
+/*banner*/
+.section.banner {
+    width: 100%;
+    min-height: 500px;
+    color: #ffffff;
+    background: #000000;
+}
+
+.intro_inner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    /*padding-left: 25%;*/
+}
+
+
+.intro_subtitle {
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.intro_subtitle span, .intro_title span {
+    color: #9a1414;
+}
+
+.intro_list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.intro_title {
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.intro_list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.intro_btn {
+    display: flex;
+    gap: 30px
+}
+
+.intro_btn > button {
+    width: 183px;
+    height: 43px;
+    border: none;
+    border-radius: 4px;
+    padding: 15px 10px;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    background: #9a1414;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.intro_btn button:last-child {
+    color: #2A2B30;
+    background: #ffffff;
+    transition: background-color 0.3s;
+}
+
+
+/*why us*/
+.section.why, .section.specialists, .section.reviews, .section.contact, .section.calculate {
+    width: 100%;
+    color: #ffffff;
+    background: #333333;
+}
+
+
+/*about*/
+.section.about, .section.services, .section.gallery, .section.text_description {
+    width: 100%;
+    color: #ffffff;
+    background: black;
+}
+
+.advantages {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.advantages_item {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    padding: 5px 10px;
+    background: rgba(38, 30, 30, 0.6);
+    border-radius: 4px;
+    box-shadow: 3px 3px 5px rgb(173 22 22/ 0.4);
+}
+
+.advantages_title {
+    color: #9a1414;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 21px;
+    padding: 20px;
+
+}
+
+
+/*specialists*/
+.specialists_items {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+
+.specialist_item {
+    width: 500px;
+    /*width: 90%;*/
+    height: 300px;
+    /*display: flex;*/
+    overflow: hidden;
+    gap: 10px;
+    /*padding: 0 20px;*/
+
+}
+
+.specialist_item img {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.text_specialist {
+    width: 100%;
+    text-align: justify;
+    font-size: 20px;
+}
+
+
+/*reviews*/
+.reviews_container {
+    max-width: 1200px;
+    min-height: 300px;
+    display: flex;
+    border-top: 1px solid #9a1414;
+    border-bottom: 1px solid #9a1414;
+    padding: 30px 0;
+}
+
+.review {
+    width: 100vw;
+    display: none;
+}
+
+.review.active {
+    display: block;
+}
+
+.controls {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.review_text {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.review_author {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.controls > button {
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    background: #9a1414;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.controls > button:hover {
+    color: #2A2B30;
+    background: #ffffff;
+    transition: background-color 0.3s;
+}
+
+
+/*calculate*/
+.form_calculate_cost {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgb(173 22 22/ 0.4);
+}
+
+.intro_title.form {
+    color: #9a1414;
+}
+
+form {
+    margin-top: 20px;
+
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+
+}
+
+.checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.checkbox a {
+    color: #9a1414;
+    text-transform: none;
+    padding-left: 10px;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+}
+
+button[type="submit"] {
+    width: 183px;
+    height: 43px;
+    border: none;
+    border-radius: 4px;
+    padding: 15px 10px;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    background: #9a1414;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #ffffff;
+    color: #000000
+}
+
+
+/*services*/
+.Cg-MNva_btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px 30px;
+    margin-top: 30px;
+    background-color: #9a1414;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: background 0.1s linear, color 0.1s linear;
+}
+
+.Cg-MNva_btn:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.text_description, .advantages_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    font-size: 20px;
+}
+
+#gall {
+    cursor: pointer;
+}
+
+
+.gallery_container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery_item {
+    display: flex;
+    flex-flow: column;
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    color: #9a1414;
+}
+
+
+.gallery_item img {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.photo_items span {
+    width: 100%;
+    height: 36px;
+    color: #ffffff;
+}
+
+.section.contact {
+    background-image: url('../img/office9.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.text_description.contact {
+    color: #9a1414;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: rgba(24, 23, 23, 0.7);
+    padding: 10px;
+    border-radius: 4px;
+    border: 2px solid #9a1414;
+}
+
+.contact a {
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.contact a:hover {
+    color: #9a1414;
+}
+
+
+.footer {
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+    color: #9a1414;
+    box-shadow: -2px -6px 13px 3px rgb(173 22 22/ 0.4);
+}
+
+
+@media (max-width: 1230px) {
+    .header_container_nav {
+        gap: 20px;
+    }
+
+    .header_logo {
+        flex-wrap: wrap;
+        justify-content: center;
+        height: fit-content;
+        gap: 10px;
+
+    }
+
+    .header__logo__name {
+        width: 100%;
+        border: none;
+    }
+
+    .header__logo_info {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .advantages_item {
+        width: 40%;
+    }
+
+    .specialists_items {
+        justify-content: center;
+    }
+
+    .review.active {
+        padding: 0 10px;
+    }
+
+}
+
+main {
+    padding-top: 150px;
+}
+
+#thanks {
+    background: #2A2B30;
+    height: 100vh;
+}
+
+@media (max-width: 990px) {
+
+    .advantages_item {
+        width: 45%;
+    }
+
+    .gallery_container {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 770px) {
+    .header_container_nav, .header_logo {
+        padding: 0 5px;
+    }
+
+    .section.banner {
+        padding-top: 70px;
+    }
+
+    .advantages_item {
+        width: 90%;
+    }
+}
+
+@media (max-width: 575px) {
+    .header__nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: #333;
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .header__nav.active {
+        display: block;
+    }
+
+    .header__toggle {
+        display: block;
+    }
+
+    .nav-list__item {
+        display: block;
+        margin: 20px 0;
+    }
+
+    .box-logo-name {
+        width: 100%;
+    }
+
+    .header__logo__name {
+        font-size: 20px;
+    }
+
+    .specialist_item {
+        width: 400px;
+    }
+
+    .text_specialist {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 575px) {
+
+}
+
+@media (max-width: 440px) {
+    main {
+        padding: 0;
+    }
+
+    .intro_inner {
+        gap: 10px;
+    }
+
+    .intro_btn {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .intro_subtitle {
+        font-size: 25px;
+    }
+
+    .intro_title, .advantages_title, .advantages_item p {
+        font-size: 18px;
+    }
+
+    .text_description {
+        font-size: 16px;
+    }
+
+    .text_description p {
+        padding: 0 10px;
+    }
+
+    .checkbox {
+        flex-direction: column;
+    }
+
+    .specialist_item {
+        width: 300px;
+    }
+
+    .text_description.contact {
+        font-size: 14px;
+    }
+
+    .text_specialist {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    .section.banner {
+        padding-top: 240px;
+    }
+
+}
